@@ -1,25 +1,42 @@
-# Tesseract OCR Installation Guide
+# 🖼️ Image to OCR Conversion Tool
 
-This guide will help you install the Tesseract OCR engine and run a sample Python script to perform OCR on an image.
+A powerful desktop application built using Python and `CustomTkinter` that allows users to extract text from images using OCR, convert voice to text, and even read out recognized text with text-to-speech capabilities. Export results to PDF, TXT, or Word formats with ease.
 
-## Prerequisites
+## 🚀 Features
 
-- Python 3.x
-- pip (Python package installer)
+- ✅ Upload and process multiple image files for OCR.
+- 📝 Display extracted text in a styled GUI textbox.
+- 📄 Export OCR results to:
+  - PDF
+  - TXT
+  - Word (.docx)
+- 🗣️ Convert text to speech (TTS).
+- 🎤 Voice to text recognition via microphone.
+- 🌙 Light/Dark/System theme switching.
+- 🔍 UI scaling for better accessibility.
 
-## Installation
+## 🧰 Technologies Used
 
-### Step 1: Install Tesseract OCR Engine
+- `Python`
+- `Tkinter` & `CustomTkinter`
+- `Pillow` (PIL)
+- `pytesseract`
+- `speech_recognition`
+- `pyttsx3`
+- `reportlab`
+- `python-docx`
 
-**Windows:**
+## 🖥️ Prerequisites
 
-1. Download the Tesseract installer from [here](https://github.com/UB-Mannheim/tesseract/wiki).
-2. Run the installer and follow the instructions.
-3. Add the Tesseract executable to your system PATH. Typically, it's located in `C:\Program Files\Tesseract-OCR`.
+Make sure you have the following installed:
 
-**macOS:**
+1. Python 3.7 or higher
+2. [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
+   - Set `pytesseract.pytesseract.tesseract_cmd` in your code to the install path.
 
-1. Open Terminal.
-2. Install Tesseract using Homebrew:
+## 📦 Installation
+
+1. Clone the repository:
    ```bash
-   brew install tesseract
+   git clone https://github.com/yourusername/image-to-ocr-conversion.git
+   cd image-to-ocr-conversion
